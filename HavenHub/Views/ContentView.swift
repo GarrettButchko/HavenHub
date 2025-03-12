@@ -24,8 +24,8 @@ struct ContentView: View {
             case .health:
                 HealthView(viewManager: viewManager)
                     .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .opacity))
-            case .anxiety:
-                AnxietyView(viewManager: viewManager)
+            case .healthModel(let healthModel):
+                HealthModelView(viewManager: viewManager, healthModel: healthModel)
                     .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .opacity))
             case .login:
                 LoginView(authViewModel: authViewModel, viewManager: viewManager)

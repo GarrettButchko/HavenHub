@@ -40,7 +40,7 @@ struct HealthView: View {
                         ForEach(healthResources, id: \.self) { item in
                             if item.type == "Mental Health"{
                                 Button(action: {
-                                    
+                                    viewManager.navigateToHealthModel(healthModel: item)
                                 }) {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 20)
@@ -69,7 +69,7 @@ struct HealthView: View {
                         ForEach(healthResources, id: \.self) { item in
                             if item.type == "Physical Health"{
                                 Button(action: {
-                                    
+                                    viewManager.navigateToHealthModel(healthModel: item)
                                 }) {
                                     ZStack {
                                         RoundedRectangle(cornerRadius: 20)
@@ -100,7 +100,7 @@ struct HealthView: View {
                     ForEach(healthResources, id: \.self) { item in
                         if item.type == "Miscellaneous"{
                             Button(action: {
-                                
+                                viewManager.navigateToHealthModel(healthModel: item)
                             }) {
                                 ZStack {
                                     RoundedRectangle(cornerRadius: 20)

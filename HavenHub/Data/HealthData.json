@@ -4,135 +4,218 @@
         "type": "Mental Health",
         "icon": "person.and.arrow.left.and.arrow.right",
         "color": "blue",
+        "image": "AnxietyPhoto",
         "info": {
             "title": "Anxiety",
-            "subtitle": "Learn about managing anxiety"
+            "subtitle": "Learn about managing anxiety",
+            "overview": "Anxiety can feel overwhelming, especially when facing the stress of homelessness or otherwise difficult circumstances. It’s important to take small steps to manage it. Try deep breathing—inhale slowly through your nose, hold for a few seconds, and exhale through your mouth. If possible, find a quiet space, like a park or shelter, to rest and clear your mind. Talking to someone, whether a friend, a support worker, or a hotline, can help ease worries. Focus on one thing at a time—securing food, finding a safe place, or just getting through the day. You’re not alone, and help is available through shelters and community programs.",
+            "symptoms" : ["- accelerated heart rate", "- impending feeling of doom", "- physical pain or tension", "- hard time sleeping", "- irritability"]
         }
     },
     {
         "type": "Mental Health",
         "icon": "cloud.rain.fill",
         "color": "purple",
+        "image": "DepressionPhoto",
         "info": {
             "title": "Depression",
-            "subtitle": "Resources for coping with depression"
+            "subtitle": "Resources for coping with depression",
+            "overview": "Depression can make everyday life feel overwhelming, especially when facing homelessness or difficult circumstances. It’s more than just feeling sad—it can drain your energy, make it hard to focus, and take away your motivation. You might feel hopeless, but you are not alone, and help is available. Small steps can make a difference: try to get rest when you can, eat something nourishing, and reach out to someone—even a shelter worker, a hotline, or a community support group. You deserve care and support, and there are people who want to help you through this.",
+            "symptoms": ["-persistent sadness", "- low energy", "- emptiness", "- loss of interest in activities once enjoyed", "- feelings of hopelessness or worthlessness", "- consuming guilt or shame"]
         }
     },
     {
         "type": "Mental Health",
         "icon": "person.badge.shield.exclamationmark",
         "color": "red",
+        "image": "TraumaPhoto",
         "info": {
             "title": "Trauma",
-            "subtitle": "Support for trauma recovery"
+            "subtitle": "Support for trauma recovery",
+            "overview": "Trauma is the emotional and physical response to deeply distressing experiences, which can be especially common for those facing homelessness or hardship. It can come from past abuse, violence, loss, or ongoing struggles, leaving you feeling unsafe, on edge, or disconnected. Healing takes time, but small steps—like finding moments of peace, talking to someone who understands, or focusing on what you can control—can help. You are not alone, and support is available to help you move forward.",
+            "symptoms": ["- flashbacks or unwanted memories",
+                "- trouble sleeping or nightmares",
+                "- difficulty trusting others",
+                "- anger, irritability, or mood swings",
+                "- trouble connecting with others",
+                "- avoiding places or people that remind you of past pain"]
         }
     },
     {
         "type": "Mental Health",
         "icon": "pills",
         "color": "orange",
+        "image": "DrugAbusePhoto",
         "info": {
             "title": "Drug Abuse",
-            "subtitle": "Help for substance abuse"
+            "subtitle": "Help for substance abuse",
+            "overview":"Drug abuse can start as a way to cope with pain, stress, or difficult circumstances, but over time, it can take control of your life and make things even harder. It can affect your health, relationships, and ability to find stability. Breaking free isn’t easy, but it is possible—support is available through shelters, community programs, and people who care. Even small steps, like talking to someone or seeking a safe place, can help you move toward a healthier future. You are not alone, and recovery is within reach.",
+            "symptoms": ["- strong cravings or urges to use",
+                "- needing more of a substance to feel the same effect",
+                "- feeling sick or anxious when not using",
+                "- trouble focusing or making decisions",
+                "- mood swings, anger, or depression",
+                "- pulling away from friends or family",
+                "- risky behavior or legal trouble",
+                "- neglecting basic needs like food, sleep, or hygiene"]
         }
     },
     {
         "type": "Mental Health",
         "icon": "waterbottle.fill",
         "color": "yellow",
+        "image": "AlcoholPhoto",
         "info": {
             "title": "Alcohol",
-            "subtitle": "Alcohol addiction resources"
+            "subtitle": "Alcohol addiction resources",
+            "overview":"Alcohol dependency can feel like a way to escape pain or stress, but over time, it can take over your life, affecting your health, relationships, and ability to move forward. It may seem impossible to stop, but support is available, and recovery is possible. Even taking small steps, like reaching out to a shelter worker, support group, or hotline, can help you regain control. You are not alone, and there are people who care and want to help.",
+            "symptoms": ["- feeling unable to cut down or stop drinking",
+                "- needing more alcohol to feel the same effect",
+                "- drinking to avoid withdrawal symptoms (shaking, sweating, nausea)",
+                "- memory loss or blackouts after drinking",
+                "- mood swings, anxiety, or depression",
+                "- neglecting responsibilities or personal care",
+                "- feeling guilty or ashamed about drinking but unable to stop"]
         }
     },
     {
         "type": "Mental Health",
         "icon": "bolt.heart",
         "color": "green",
+        "image": "GriefPhoto",
         "info": {
             "title": "Grief & Loss",
-            "subtitle": "Dealing with loss and grief"
+            "subtitle": "Dealing with loss and grief",
+            "overview":"Grief and loss can feel overwhelming, especially when you’re already facing hardship. Losing someone or something important—whether a loved one, a home, or a sense of stability—can bring deep sadness, anger, or even numbness. There is no 'right' way to grieve, and it takes time to heal. Try to be kind to yourself and seek support when you can—talking to someone, writing down your thoughts, or finding small moments of peace can help. You are not alone, and there are people who care and want to support you.",
+            "symptoms": ["- deep sadness or feelings of emptiness",
+                "- anger, guilt, or regret",
+                "- trouble sleeping or loss of appetite",
+                "- feeling numb or disconnected",
+                "- difficulty concentrating or making decisions",
+                "- wanting to withdraw from others or avoid reminders of the loss"]
         }
     },
     {
         "type": "Mental Health",
         "icon": "person.crop.circle.badge.exclamationmark.fill",
         "color": "teal",
+        "image": "PTSDPhoto",
         "info": {
             "title": "PTSD",
-            "subtitle": "Post-Traumatic Stress Disorder support"
+            "subtitle": "Post-Traumatic Stress Disorder support",
+            "overview":"PTSD can happen after going through something really scary or painful, like violence, abuse, or losing everything you had. It’s not just bad memories—it can feel like the past is still happening, making it hard to feel safe or trust others. You might have nightmares, sudden panic, or feel numb and disconnected. Healing takes time, but you don’t have to go through it alone. Finding small ways to feel grounded—deep breaths, a quiet space, or talking to someone who understands—can help. You deserve peace, and there are people who care and want to support you.",
+            "symptoms": ["- flashbacks or nightmares that make it feel like the past is happening again",
+                "- feeling on edge, jumpy, or always watching your surroundings",
+                "- avoiding people, places, or things that remind you of what happened",
+                "- numbness or feeling disconnected from yourself or others",
+                "- trouble sleeping or constant exhaustion",
+                "- sudden anger, sadness, or panic that feels out of your control"]
         }
     },
     {
         "type": "Mental Health",
         "icon": "person.2",
         "color": "red",
+        "image": "BipolarPhoto",
         "info": {
             "title": "Bipolar Disorder",
-            "subtitle": "Managing bipolar disorder"
+            "subtitle": "Managing bipolar disorder",
+            "overview":"Bipolar disorder can make you feel like you're on an emotional rollercoaster—one moment full of energy and big ideas, the next feeling drained and hopeless. These extreme ups and downs aren’t your fault, and they can make life feel unpredictable, especially when you're already facing tough times. But you’re not broken, and you’re not alone. There are ways to manage the highs and lows, whether through support groups, talking to someone who understands, or finding small routines that help you feel more stable. You deserve care and support, and help is out there.",
+            "symptoms": ["- extreme mood swings, from feeling unstoppable to deeply depressed",
+                "- periods of high energy, little need for sleep, and racing thoughts",
+                "- feeling overly confident or taking big risks without thinking",
+                "- sudden crashes into sadness, hopelessness, or exhaustion",
+                "-trouble focusing or making decisions during mood shifts",
+                "- pulling away from people or struggling to take care of yourself"]
         }
     },
     {
         "type": "Mental Health",
         "icon": "person.fill.questionmark",
         "color": "gray",
+        "image": "SchizophreniaPhoto",
         "info": {
             "title": "Schizophrenia",
-            "subtitle": "Understanding schizophrenia"
+            "subtitle": "Understanding schizophrenia",
+            "overview":"Schizophrenia can make it hard to tell what’s real and what’s not, and that can feel scary and isolating. You might hear voices, see things others don’t, or feel like people are against you. It’s not your fault, and you’re not alone—many people live with this and find ways to manage it. Getting support, whether from a shelter, a social worker, or someone you trust, can help you feel more stable. No matter what you’re going through, you deserve care, understanding, and a chance to feel safe.",
+            "symptoms": ["- hearing voices or seeing things that aren’t there",
+                "- feeling paranoid or like others are watching or trying to harm you",
+                "- trouble organizing thoughts or speaking clearly",
+                "- strong beliefs that don’t match reality (delusions)",
+                "- difficulty focusing or remembering things",
+                "- withdrawing from people or losing interest in daily activities"]
         }
     },
     {
         "type": "Physical Health",
         "icon": "leaf.fill",
         "color": "green",
+        "image": "NutritionPhoto",
         "info": {
             "title": "Nutrition",
-            "subtitle": "Healthy eating tips"
+            "subtitle": "Healthy eating tips",
+            "overview":"",
+            "symptoms": []
         }
     },
     {
         "type": "Physical Health",
         "icon": "figure.walk",
         "color": "blue",
+        "image": "ExercisePhoto",
         "info": {
             "title": "Exercise",
-            "subtitle": "Staying active"
+            "subtitle": "Staying active",
+            "overview":"",
+            "symptoms": []
         }
     },
     {
         "type": "Physical Health",
         "icon": "bandage.fill",
         "color": "red",
+        "image": "FirstAidPhoto",
         "info": {
             "title": "First Aid",
-            "subtitle": "Emergency health support"
+            "subtitle": "Emergency health support",
+            "overview":"",
+            "symptoms": []
         }
     },
     {
         "type": "Miscellaneous",
         "icon": "figure.mind.and.body.circle",
         "color": "cyan",
+        "image": "MindfulnessPhoto",
         "info": {
             "title": "Mindfulness",
-            "subtitle": "Let's get you in the right headspace - meditation and more"
+            "subtitle": "Let's get you in the right headspace - meditation and more",
+            "overview":"",
+            "symptoms": []
         }
     },
     {
         "type": "Miscellaneous",
         "icon": "bathtub",
         "color": "orange",
+        "image": "HygienePhoto",
         "info": {
             "title": "Hygiene",
-            "subtitle": "Find resources to help you stay on top of your hygiene game"
+            "subtitle": "Find resources to help you stay on top of your hygiene game",
+            "overview":"",
+            "symptoms": []
         }
     },
     {
         "type": "Miscellaneous",
         "icon": "progress.indicator",
         "color": "teal",
+        "image": "ProgressPhoto",
         "info": {
             "title": "MyProgress",
-            "subtitle": "Taking small steps daily goes a long way - see how you're progressing over time"
+            "subtitle": "Taking small steps daily goes a long way - see how you're progressing over time",
+            "overview":"We're here to not only support you, but help you grow as an individual. You deserve the best, and we will support you in however that looks for you. Here, you can set goals, track progress, and grow. This is your space.",
+            "symptoms": []
         }
     }
 ]
