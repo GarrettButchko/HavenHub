@@ -73,12 +73,12 @@ struct MainView: View {
                     )
                 }
                 
-                if (showFoodBank){
-                    
-                    FoodBankView(cameraPosition: $cameraPosition, visibleRegion: $visibleRegion, shelters: $shelters, showBottomSheet: $showBottomSheet, showFoodBank: $showFoodBank, showTitle: $showTitle)
-                    
-                }
-                
+//                if (showFoodBank){
+//                    
+//                    FoodBankView(cameraPosition: $cameraPosition, visibleRegion: $visibleRegion, shelters: $shelters, showBottomSheet: $showBottomSheet, showFoodBank: $showFoodBank, showTitle: $showTitle)
+//                    
+//                }
+//                
                 EmergencyView(showEmergency: $showEmergency)
                     .opacity(showEmergency ? 1 : 0)
             }

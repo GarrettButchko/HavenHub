@@ -2,16 +2,16 @@ import SwiftUI
 import MapKit
 
 struct FoodBankView: View {
-    @Binding var cameraPosition: MapCameraPosition
-    @Binding var visibleRegion: MKCoordinateRegion?
-    @Binding var shelters: [MKMapItem]
-    @Binding var showBottomSheet: Bool
-    @Binding var showFoodBank: Bool
-    @Binding var showTitle: Bool
-    @State private var isKeyboardVisible: Bool = false
-    @State var offsetY: CGFloat = 540
-    @State var lastDragPosition: CGFloat = 0
-
+//    @Binding var visibleRegion: MKCoordinateRegion?
+//    @Binding var shelters: [MKMapItem]
+//    @Binding var showBottomSheet: Bool
+//    @Binding var showFoodBank: Bool
+//    @Binding var showTitle: Bool
+//    @State private var isKeyboardVisible: Bool = false
+//    @State var offsetY: CGFloat = 540
+//    @State var lastDragPosition: CGFloat = 0
+    @StateObject var viewManager: ViewManager
+    
     var body: some View {
         GeometryReader { geometry in
             VStack {
@@ -23,7 +23,7 @@ struct FoodBankView: View {
                         .foregroundColor(.gray)
                         .padding(10)
                     
-                    List(shelters, id: \.self) { shelter in
+                    List(viewManager.shelters, id: \.self) { shelter in
                         NavigationLink(destination: FoodBankDetailView(shelter: shelter)) {
                             VStack(alignment: .leading) {
                                 Text(shelter.name ?? "Unnamed Food Bank")
@@ -40,8 +40,9 @@ struct FoodBankView: View {
                     
                     Button(action: {
                         withAnimation {
-                            showFoodBank = false
-                            showBottomSheet = true
+//                            showFoodBank = false
+//                            showBottomSheet = true
+                            viewManager.navigateToMain()
                         }
                     }) {
                         ZStack {

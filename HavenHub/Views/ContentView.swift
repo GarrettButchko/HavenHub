@@ -10,7 +10,7 @@ import MapKit
 
 struct ContentView: View {
     
-    @StateObject private var viewManager = ViewManager()
+    @StateObject var viewManager = ViewManager()
     @StateObject var authViewModel = AuthViewModel()
     
     @State private var showBottomSheet: Bool = false
@@ -52,6 +52,9 @@ struct ContentView: View {
             case .login:
                 LoginView(authViewModel: authViewModel, viewManager: viewManager)
                     .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .opacity))
+            case .food:
+                FoodBankView(viewManager: viewManager)
+//                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .opacity))
             }
         }
     }
