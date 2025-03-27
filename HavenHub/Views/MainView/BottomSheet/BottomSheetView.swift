@@ -6,9 +6,9 @@ struct BottomSheetView: View {
     @Binding var isKeyboardVisible: Bool
     @Binding var cameraPosition: MapCameraPosition
     @Binding var showEmergency: Bool
-    @Binding var mapItems: [MKMapItem]
-    @Binding var visibleRegion: MKCoordinateRegion?
-    @Binding var currentItem: MKMapItem?
+    @Binding var mapItems: [MapItemModel]
+    @Binding var region: MKCoordinateRegion?
+    @Binding var currentItem: MapItemModel?
     @Binding var showTitle: Bool
     @Binding var showingMenu: Bool
     @Binding var route: MKRoute?
@@ -36,7 +36,8 @@ struct BottomSheetView: View {
                         .foregroundColor(.gray)
                         .padding(10)
                     
-                    SearchBarView(searchText: $searchText, isKeyboardVisible: $isKeyboardVisible, showTitle: $showTitle, offsetY: $offsetY, mapItems: $mapItems, keyboardHeight: $keyboardHeight, region: $visibleRegion, nameIsFocused: $nameIsFocused, searchTerms: $searchTerms)
+                    SearchBarView(searchText: $searchText, isKeyboardVisible: $isKeyboardVisible, showTitle: $showTitle, offsetY: $offsetY, mapItems: $mapItems, keyboardHeight: $keyboardHeight, region: $region, nameIsFocused: $nameIsFocused, searchTerms: $searchTerms)
+
                     Group {
                         if isKeyboardVisible {
                             SearchResultsView(

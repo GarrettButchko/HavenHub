@@ -2,6 +2,10 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>CLIENT_ID</key>
+	<string>235652911844-kpi2c34d0vll696kbm1mvaqmtbgp8ijq.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.235652911844-kpi2c34d0vll696kbm1mvaqmtbgp8ijq</string>
 	<key>API_KEY</key>
 	<string>AIzaSyBB1zr69OUwhTJUcpVHK5PkmGkUMfp-Rds</string>
 	<key>GCM_SENDER_ID</key>
@@ -15,16 +19,18 @@
 	<key>STORAGE_BUCKET</key>
 	<string>havenhub-b9f1f.firebasestorage.app</string>
 	<key>IS_ADS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
-	<false/>
+	<false></false>
 	<key>IS_APPINVITE_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_GCM_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>IS_SIGNIN_ENABLED</key>
-	<true/>
+	<true></true>
 	<key>GOOGLE_APP_ID</key>
 	<string>1:235652911844:ios:0128c84e55b4965f1e12f1</string>
+	<key>DATABASE_URL</key>
+	<string>https://havenhub-b9f1f-default-rtdb.firebaseio.com</string>
 </dict>
 </plist>

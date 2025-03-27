@@ -9,6 +9,7 @@ import SwiftUI
 
 struct SpeechBubble: Shape {
     var rectangleWidth: CGFloat // Add a dynamic width property for the rectangle
+    var rectangleHeight: CGFloat // Add a dynamic width property for the rectangle
     
     func path(in rect: CGRect) -> Path {
         let cornerRadius: CGFloat = 20
@@ -19,7 +20,7 @@ struct SpeechBubble: Shape {
         
         // Define the rounded rectangle with dynamic width
         let rectHeight = rect.height - triangleHeight
-        let roundedRect = CGRect(x: rect.minX + ((150 - rectangleWidth) / 2), y: rect.minY, width: rectangleWidth, height: rectHeight)
+        let roundedRect = CGRect(x: rect.minX + ((150 - rectangleWidth) / 2), y: rect.minY, width: rectangleWidth, height: rectangleHeight)
         path.addRoundedRect(in: roundedRect, cornerSize: CGSize(width: cornerRadius, height: cornerRadius))
         
         // Define the triangle

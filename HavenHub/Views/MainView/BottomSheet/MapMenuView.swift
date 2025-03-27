@@ -10,14 +10,14 @@ import MapKit
 
 public struct MapMenuView: View {
     
-    @Binding var mapItem: MKMapItem?
+    @Binding var mapItem: MapItemModel?
     @Binding var showingMenu: Bool
     @State var scene: MKLookAroundScene?
     
     public var body: some View {
         VStack{
             HStack{
-                Text(mapItem?.name ?? "No Name")
+                Text(mapItem?.mapItem.name ?? "No Name")
                     .font(.headline)
             
                 Spacer()
@@ -37,7 +37,7 @@ public struct MapMenuView: View {
             Button(action: {
                 let launchOptions = [MKLaunchOptionsDirectionsModeKey: MKLaunchOptionsDirectionsModeWalking] // Set driving mode
 
-                MKMapItem.openMaps(with: [mapItem!], launchOptions: launchOptions)
+                MKMapItem.openMaps(with: [mapItem!.mapItem], launchOptions: launchOptions)
             }) {
                 ZStack {
                     // Background style

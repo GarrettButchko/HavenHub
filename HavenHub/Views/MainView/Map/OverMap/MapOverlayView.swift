@@ -18,6 +18,7 @@ struct MapOverlayView: View {
     @State var but3: Bool = false
     @State var but4: Bool = false
     @Binding var searchTerms : [String]
+    @Binding var showSheet: Bool
     
     let routeCalc: RouteCalculator
     let userLocation: UserLocation
@@ -39,7 +40,7 @@ struct MapOverlayView: View {
                     
                     LocationButton(route: $route, cameraPosition: $cameraPosition, locationSearch: UserLocation())
                     
-                    ProfileButton(viewManager: viewManager)
+                    ProfileButton(viewManager: viewManager, showSheet: $showSheet)
                 }
                 
                 Spacer()

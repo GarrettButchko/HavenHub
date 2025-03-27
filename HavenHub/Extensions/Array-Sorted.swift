@@ -8,12 +8,12 @@
 import MapKit
 
 // MARK: - Sorting Extension
-extension Array where Element == MKMapItem {
-    func sortedBySearchText(_ searchText: String) -> [MKMapItem] {
+extension Array where Element == MapItemModel {
+    func sortedBySearchText(_ searchText: String) -> [MapItemModel] {
         let lowerSearchText = searchText.lowercased()
         return self.sorted { a, b in
-            let aValue = a.name?.lowercased() ?? ""
-            let bValue = b.name?.lowercased() ?? ""
+            let aValue = a.mapItem.name?.lowercased() ?? ""
+            let bValue = b.mapItem.name?.lowercased() ?? ""
             
             // Exact matches first
             if aValue == lowerSearchText { return true }

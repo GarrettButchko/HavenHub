@@ -14,7 +14,7 @@ struct SearchBarView: View {
     @Binding var isKeyboardVisible: Bool // Indicates whether the keyboard is visible
     @Binding var showTitle: Bool // Controls the visibility of the title
     @Binding var offsetY: CGFloat // Tracks the vertical position of the bottom sheet
-    @Binding var mapItems: [MKMapItem] // Stores the search results
+    @Binding var mapItems: [MapItemModel] // Stores the search results
     @Binding var keyboardHeight: CGFloat // Captures the height of the keyboard
     @Binding var region: MKCoordinateRegion? // Defines the map region for performing searches
     @FocusState.Binding var nameIsFocused: Bool // Tracks whether the text field is focused
@@ -67,7 +67,7 @@ struct SearchBarView: View {
                 if !newValue.isEmpty {
                     // Perform a search if the search text is not empty
                     let locationSearch = LocationSearch(mapItems: $mapItems)
-                    locationSearch.performSearch(in: region!, words: searchTerms) // Pass the region for search
+                    locationSearch.performSearch(in: region!, word: newValue) // Pass the region for search
                 }
             }
             

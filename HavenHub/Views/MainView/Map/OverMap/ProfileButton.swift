@@ -9,12 +9,11 @@ import SwiftUI
 
 struct ProfileButton: View {
     @StateObject var viewManager: ViewManager
+    @Binding var showSheet: Bool
     
     var body: some View {
         Button(action: {
-            withAnimation{
-                viewManager.navigateToProfile()
-            }
+            showSheet = true
         }) {
             ZStack {
                 Circle()

@@ -23,7 +23,7 @@ struct ContentView: View {
         VStack {
             switch viewManager.currentView {
             case .main:
-                MainView(viewManager: viewManager)
+                MainView(viewManager: viewManager, authViewModel: authViewModel)
                     .transition(.asymmetric(insertion: .move(edge: .leading), removal: .opacity))
             case .profile:
                 ProfileView(viewManager: viewManager, authViewModel: authViewModel)
@@ -55,6 +55,22 @@ struct ContentView: View {
             case .food:
                 FoodBankView(viewManager: viewManager)
 //                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .opacity))
+            case .signup:
+                SignUpView(authViewModel: authViewModel, viewManager: viewManager)
+                    .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .opacity))
+            case .signupshelter:
+                SignUpViewShelter(authViewModel: authViewModel, viewManager: viewManager)
+                .transition(.asymmetric(insertion: .move(edge: .trailing), removal: .opacity))
+            case .text:
+                Text("Please wait until you are verified, thank you!")
+                Button("Logout") {
+                    withAnimation {
+                        viewManager.navigateToLogin()
+                    }
+                    authViewModel.logout()
+                }
+            case .shelter:
+                ShelterView(viewManager: viewManager, authViewModel: authViewModel)
             }
         }
     }

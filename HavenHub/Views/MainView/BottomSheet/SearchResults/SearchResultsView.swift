@@ -10,8 +10,8 @@ import MapKit
 
 struct SearchResultsView: View {
     @Binding var searchText: String
-    @Binding var mapItems: [MKMapItem]
-    @Binding var currentItem: MKMapItem?
+    @Binding var mapItems: [MapItemModel]
+    @Binding var currentItem: MapItemModel?
     @Binding var keyboardHeight: CGFloat
     @FocusState.Binding var nameIsFocused: Bool
     @Binding var route: MKRoute?
@@ -39,8 +39,8 @@ struct SearchResultsView: View {
 // MARK: - Search Results List
 struct SearchResultsListView: View {
     let searchText: String
-    let sortedItems: [MKMapItem]
-    @Binding var currentItem: MKMapItem?
+    let sortedItems: [MapItemModel]
+    @Binding var currentItem: MapItemModel?
     @FocusState.Binding var nameIsFocused: Bool
     @Binding var route: MKRoute?
     @Binding var showingMenu: Bool
@@ -62,7 +62,7 @@ struct SearchResultsListView: View {
                         withAnimation {
                             showingMenu = true
                         }
-                        routeCalc.calculateRoute(from: userLocation.getUserLocation().center, to: item.placemark.coordinate) { route in
+                        routeCalc.calculateRoute(from: userLocation.getUserLocation().center, to: item.mapItem.placemark.coordinate) { route in
                             if let route = route {
                                 print("Route distance: \(route.distance) meters")
                                 self.route = route
@@ -72,7 +72,7 @@ struct SearchResultsListView: View {
                         }
                     }) {
                         SearchResultRow(
-                            item: item,
+                            item: item.mapItem,
                             distanceCalc: distanceCalc,
                             userLocation: userLocation
                         )
